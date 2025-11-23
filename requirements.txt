@@ -1,6 +1,7 @@
-# requirements.txt
-greenlet>=2.0.0
+greenlet>=3.0.0
 playwright==1.44.0
+langchain
+langchain-community
 langchain-google-genai
 browser-use
 fastapi
