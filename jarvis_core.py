@@ -1,19 +1,19 @@
+# --- jarvis_core.py IMPORTS SECTION ---
+
 import os
 import base64
 from io import BytesIO
 from PIL import Image
 
-# LangChain/Gemini imports
+# LangChain specific imports (Explicit paths to fix ImportErrors)
 from langchain_google_genai import ChatGoogleGenerativeAI
-# Explicit imports to bypass version/deprecation issues
-from langchain.agents import create_structured_chat_agent
 from langchain.agents.agent import AgentExecutor
+from langchain.agents.structured_chat.base import create_structured_chat_agent
 from langchain_core.prompts import ChatPromptTemplate
 from browser_use.browser_use import BrowserUse
 
-# NOTE: Load .env is usually done in the server, but including it for robustness
 from dotenv import load_dotenv
-load_dotenv() 
+
 
 async def execute_browser_task(text_prompt: str) -> dict:
     
