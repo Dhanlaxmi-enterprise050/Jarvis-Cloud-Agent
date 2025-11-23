@@ -7,7 +7,7 @@ from PIL import Image
 
 # LangChain specific imports (Explicit paths to fix ImportErrors)
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.agents.agent import AgentExecutor
+from langchain.agents.agent_executor import AgentExecutor
 from langchain.agents.structured_chat.base import create_structured_chat_agent
 from langchain_core.prompts import ChatPromptTemplate
 from browser_use.browser_use import BrowserUse
