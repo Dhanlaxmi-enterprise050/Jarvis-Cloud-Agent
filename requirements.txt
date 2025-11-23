@@ -1,23 +1,11 @@
-
-# AI Brain
+# requirements.txt
+greenlet>=2.0.0
+playwright==1.44.0
 langchain-google-genai
-
-# Browser Automation
 browser-use
-playwright==1.44.0  # Use a specific version for stability
-
-# API/Utility
 fastapi
 uvicorn
 pydantic
-
-# Voice Output
 edge-tts
-
-
-# Image Processing
 Pillow
-
-# Environment
 python-dotenv
-
