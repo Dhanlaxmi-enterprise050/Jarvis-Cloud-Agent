@@ -5,7 +5,9 @@ from PIL import Image
 
 # LangChain/Gemini imports
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.agents import AgentExecutor, create_structured_chat_agent
+# Explicit imports to bypass version/deprecation issues
+from langchain.agents import create_structured_chat_agent
+from langchain.agents.agent import AgentExecutor
 from langchain_core.prompts import ChatPromptTemplate
 from browser_use.browser_use import BrowserUse
 
